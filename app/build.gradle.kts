@@ -1,7 +1,8 @@
 // NOTE: this project uses Gradle Kotlin DSL. More common build.gradle instructions can be found in
 // the main README.
 plugins {
-  id("com.android.application")
+    id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -16,9 +17,7 @@ android {
 
         resourcePrefix("fui_")
         vectorDrawables.useSupportLibrary = true
-    }
 
-    defaultConfig {
         multiDexEnabled = true
     }
 
@@ -73,10 +72,13 @@ dependencies {
     implementation(Config.Libs.Androidx.materialDesign)
     implementation(Config.Libs.Androidx.multidex)
 
+    implementation(platform("com.google.firebase:firebase-bom:32.1.0"))
     implementation(project(":auth"))
     implementation(project(":firestore"))
     implementation(project(":database"))
     implementation(project(":storage"))
+
+    implementation("com.google.firebase:firebase-analytics-ktx")
 
     implementation(Config.Libs.Provider.facebook)
     // Needed to override Facebook

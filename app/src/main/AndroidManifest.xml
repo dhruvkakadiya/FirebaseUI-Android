@@ -41,7 +41,10 @@
             android:label="@string/title_auth_activity" />
         <activity
             android:name=".auth.AnonymousUpgradeActivity"
-            android:label="@string/title_anonymous_upgrade"/>
+            android:label="@string/title_anonymous_upgrade" />
+        <activity
+            android:name="com.squareup.leakcanary.internal.DisplayLeakActivity"
+            android:exported="true" />
 
         <!-- Firestore demo -->
         <activity

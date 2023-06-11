@@ -70,6 +70,7 @@ android {
 }
 
 dependencies {
+    implementation(platform("com.google.firebase:firebase-bom:32.1.0"))
     implementation(project(":auth"))
     implementation(project(":firestore"))
     implementation(project(":database"))

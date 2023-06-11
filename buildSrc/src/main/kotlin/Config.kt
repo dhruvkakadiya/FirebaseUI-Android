@@ -5,9 +5,9 @@ object Config {
     private const val kotlinVersion = "1.7.10"
 
     object SdkVersions {
-        const val compile = 29
-        const val target = 29
-        const val min = 16
+        const val compile = 33
+        const val target = 33
+        const val min = 29
     }
 
     object Plugins {
@@ -45,11 +45,11 @@ object Config {
         }
 
         object Firebase {
-            const val bom = "com.google.firebase:firebase-bom:28.2.0"
-            const val auth = "com.google.firebase:firebase-auth"
-            const val database = "com.google.firebase:firebase-database"
-            const val firestore = "com.google.firebase:firebase-firestore"
-            const val storage = "com.google.firebase:firebase-storage"
+            const val bom = "com.google.firebase:firebase-bom:32.1.0"
+            const val auth = "com.firebaseui:firebase-ui-auth:$version"
+            const val database = "com.firebaseui:firebase-ui-database:$version"
+            const val firestore = "com.firebaseui:firebase-ui-firestore:$version"
+            const val storage = "com.firebaseui:firebase-ui-storage:$version"
         }
 
         object PlayServices {
